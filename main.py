@@ -94,7 +94,7 @@ def main() -> None:
     p.add_argument("--vram", required=True, help="GPU VRAM, e.g. 10gb")
     p.add_argument("--ctx", type=int, default=8192, help="context length (default 8192)")
     p.add_argument("--layers", type=int, help="override total layer count")
-    p.add_argument("--kv", default="f16", choices=["f16", "q8", "q4"],
+    p.add_argument("--kv", default="f16", type=str.lower, choices=["f16", "q8", "q4"],
                    help="KV cache type (default f16)")
     p.add_argument("--kv-dim", type=int, default=1024,
                    help="n_kv_heads * head_dim (default 1024, typical GQA model)")

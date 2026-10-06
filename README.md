@@ -1,4 +1,4 @@
-# ai-model-layer-calculator
+# LM Studio GPU Offload Calculator
 
 A small CLI tool that estimates how many layers of a GGUF model to offload
 to your GPU, so you have a concrete number to type into **LM Studio**'s
